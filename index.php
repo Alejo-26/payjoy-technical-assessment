@@ -8,7 +8,7 @@ loadEnv(__DIR__ . '/.env');
 // to always answer in JSON format
 header('Content-Type: application/json; charset=utf-8');
 
-// 1. Valida the API_KEY in the enviroment
+// 1. Validate the API_KEY in the enviroment
 $apiKey = $_ENV['EXCHANGE_RATE_API_KEY'] ?? null;
 if (!$apiKey) {
     http_response_code(500);
